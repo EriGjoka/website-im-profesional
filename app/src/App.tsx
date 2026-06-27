@@ -10,7 +10,6 @@ import {
   Instagram,
   Facebook,
   Youtube,
-  Linkedin,
   Phone,
   Mail,
   MapPin,
@@ -341,15 +340,15 @@ function FounderSection() {
               Florian Tata është Art Director dhe 3D Motion Artist me mbi 20 vjet përvojë në fushat e Dizajnit dhe Medias. I lindur dhe rritur në Tiranë, ai mban diplomë në Drejtësi si dhe certifikime të shumta në Dizajn Grafik. Karrierën e tij e nisi në studio të vogla kreative, duke punuar me projekte të ndryshme dhe duke specializuar në prodhimin mediatik.
             </p>
 
-            {/* LinkedIn */}
+            {/* Instagram */}
             <a
-              href="https://www.linkedin.com/in/florian-tata-318581211/"
+              href="https://www.instagram.com/goldstudio.al"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[#C9A962] border border-[rgba(201,169,98,0.3)] px-5 py-2.5 rounded-lg hover:bg-[rgba(201,169,98,0.05)] hover:border-[#C9A962] transition-all duration-200 mb-10 text-sm font-medium"
             >
-              <Linkedin size={16} />
-              Shiko profilin në LinkedIn
+              <Instagram size={16} />
+              Na ndiqni në Instagram
               <ExternalLink size={14} />
             </a>
 
@@ -422,10 +421,10 @@ function ContactSection() {
                 <div><p className="text-xs text-[#A0A0A0] uppercase tracking-wider">Adresa</p><p className="text-[#A0A0A0] font-medium">Tiranë, Albania</p></div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-[rgba(201,169,98,0.1)] flex items-center justify-center"><Linkedin size={18} className="text-[#C9A962]" /></div>
+                <div className="w-10 h-10 rounded-full bg-[rgba(201,169,98,0.1)] flex items-center justify-center"><Instagram size={18} className="text-[#C9A962]" /></div>
                 <div>
-                  <p className="text-xs text-[#A0A0A0] uppercase tracking-wider">LinkedIn</p>
-                  <a href="https://www.linkedin.com/in/florian-tata-318581211/" target="_blank" rel="noopener noreferrer" className="text-[#C9A962] font-medium hover:underline inline-flex items-center gap-1">Florian Tata <ExternalLink size={12} /></a>
+                  <p className="text-xs text-[#A0A0A0] uppercase tracking-wider">Instagram</p>
+                  <a href="https://www.instagram.com/goldstudio.al" target="_blank" rel="noopener noreferrer" className="text-[#C9A962] font-medium hover:underline inline-flex items-center gap-1">@goldstudio.al <ExternalLink size={12} /></a>
                 </div>
               </div>
             </div>
@@ -466,8 +465,12 @@ function Footer() {
             <a href="#" className="font-display font-bold text-2xl text-[#C9A962] mb-4 inline-block">GOLD</a>
             <p className="text-[#A0A0A0] text-sm leading-relaxed mb-6">Studio prodhimi kreativ në Tiranë. Reklama, video, animacion.</p>
             <div className="flex gap-3">
-              {[Instagram, Facebook, Youtube, Linkedin].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.05)] flex items-center justify-center text-[#8B7355] hover:text-[#C9A962] hover:bg-[rgba(201,169,98,0.1)] transition-all duration-200"><Icon size={18} /></a>
+              {[
+                { Icon: Instagram, href: 'https://www.instagram.com/goldstudio.al' },
+                { Icon: Facebook, href: '#' },
+                { Icon: Youtube, href: '#' },
+              ].map(({ Icon, href }, i) => (
+                <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.05)] flex items-center justify-center text-[#8B7355] hover:text-[#C9A962] hover:bg-[rgba(201,169,98,0.1)] transition-all duration-200"><Icon size={18} /></a>
               ))}
             </div>
           </div>
@@ -493,7 +496,7 @@ function Footer() {
               <li className="text-[#A0A0A0]">+355 69 34 88 888</li>
               <li className="text-[#A0A0A0]">info@goldstudio.com</li>
               <li className="text-[#A0A0A0]">Tiranë, Albania</li>
-              <li><a href="https://www.linkedin.com/in/florian-tata-318581211/" target="_blank" rel="noopener noreferrer" className="text-[#C9A962] hover:underline inline-flex items-center gap-1">Florian Tata <ExternalLink size={12} /></a></li>
+              <li><a href="https://www.instagram.com/goldstudio.al" target="_blank" rel="noopener noreferrer" className="text-[#C9A962] hover:underline inline-flex items-center gap-1">@goldstudio.al <ExternalLink size={12} /></a></li>
             </ul>
           </div>
         </div>
