@@ -408,11 +408,11 @@ const handleSubmit = async (e: React.FormEvent) => {
             <div className="space-y-5 mb-10">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-[rgba(201,169,98,0.1)] flex items-center justify-center"><Phone size={18} className="text-[#C9A962]" /></div>
-                <div><p className="text-xs text-[#A0A0A0] uppercase tracking-wider">Telefon</p><p className="text-[#C9A962] font-medium">+355 69 34 88 888</p></div>
+                <div><p className="text-xs text-[#A0A0A0] uppercase tracking-wider">Telefon</p><p className="text-[#C9A962] font-medium"><a href="tel:+355693488888" className="text-[#C9A962] hover:underline">+355 69 34 88 888</a></p></div>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-[rgba(201,169,98,0.1)] flex items-center justify-center"><Mail size={18} className="text-[#C9A962]" /></div>
-                <div><p className="text-xs text-[#A0A0A0] uppercase tracking-wider">Email</p><p className="text-[#C9A962] font-medium">info@goldstudio.com</p></div>
+                <div><p className="text-xs text-[#A0A0A0] uppercase tracking-wider">Email</p><p className="text-[#C9A962] font-medium"><a href="mailto:goldstudioproduction@gmail.com" className="text-[#C9A962] hover:underline">Goldstudioproduction@gmail.com</a></p></div>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-[rgba(201,169,98,0.1)] flex items-center justify-center"><MapPin size={18} className="text-[#C9A962]" /></div>
@@ -491,8 +491,8 @@ function Footer() {
           <div>
             <h4 className="text-[#F5F0E8] font-semibold text-sm mb-5 uppercase tracking-wider">Kontakt</h4>
             <ul className="space-y-3 text-sm">
-              <li className="text-[#A0A0A0]">+355 69 34 88 888</li>
-              <li className="text-[#A0A0A0]">info@goldstudio.com</li>
+              <li className="text-[#A0A0A0]"><a href="tel:+355693488888" className="text-[#C9A962] hover:underline">+355 69 34 88 888</a></li>
+              <li className="text-[#A0A0A0]"><a href="mailto:goldstudioproduction@gmail.com" className="text-[#C9A962] hover:underline">Goldstudioproduction@gmail.com</a></li>
               <li className="text-[#A0A0A0]">Tiranë, Albania</li>
               <li><a href="https://www.instagram.com/goldstudio.al" target="_blank" rel="noopener noreferrer" className="text-[#C9A962] hover:underline inline-flex items-center gap-1">@goldstudio.al <ExternalLink size={12} /></a></li>
             </ul>
